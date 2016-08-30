@@ -11,3 +11,7 @@ RUN add-apt-repository -y ppa:webupd8team/java
 
 RUN pip3 install esrally && \
     apt install -y oracle-java8-installer
+
+VOLUME /root/.rally/benchmarks
+
+PORT 9200
